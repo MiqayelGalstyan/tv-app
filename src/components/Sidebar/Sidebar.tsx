@@ -5,6 +5,7 @@ import SearchIcon from "../../assets/icons/search.png";
 import styles from "./style.module.css";
 
 export const Sidebar = (): JSX.Element => {
+
   
   const [active, setActive] = useState<number>(menuItemsData[0].id);
 
