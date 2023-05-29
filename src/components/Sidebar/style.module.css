@@ -1,0 +1,82 @@
+:root {
+    --route-color: #F1F1F1;
+    --route-background:#3b486d;
+    --font-size:30px;
+  }
+
+.sidebar {
+    width: 157px;
+    height: 100vh;
+    transition: 0.3s;
+    padding-left: 34px;
+    padding-top: 60px;
+}
+
+.sidebar ul li {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 42px;
+}
+
+.sidebar ul li img {
+    margin-right: 50px;
+}
+
+.sidebar:hover {
+    width: 312px;
+}
+.sidebar:hover ul li {
+    border-radius: 12px;
+}
+.sidebar ul li.route , .sidebar ul li.activeRoute  {
+    cursor: pointer;
+}
+.sidebar ul li {
+    width: 82px;
+    height: 82px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    
+}
+
+.sidebar ul li img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar ul li a {
+    visibility: hidden;
+    width: 0;
+}
+
+.sidebar:hover ul li {
+    width: 100%;
+    height: auto;
+    justify-content:unset;
+}
+
+.sidebar:hover ul li img {
+    margin-right: 50px;
+    margin-left: unset;
+}
+
+.sidebar:hover ul li a {
+    visibility: visible;
+    width: auto;
+}
+
+.sidebar ul li.route a , .sidebar ul li.activeRoute a {
+    color: var(--route-color);
+    font-size: var(--font-size);
+    text-decoration: none;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+.sidebar ul li.activeRoute{
+    background-color: var(--route-background);
+}
