@@ -16,6 +16,7 @@ const settings = {
 const TrendingNow = (): JSX.Element => {
   return (
     <div className={styles.slider}>
+      <p className={styles.sliderTitle}>Trending Now</p>
       <Slider  {...settings}>
         {data.TrendingNow.map((item, key) => (
           <div className={styles.item} key={key}>
