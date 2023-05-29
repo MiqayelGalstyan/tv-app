@@ -9,11 +9,41 @@
     height: 100vh;
     transition: 0.3s;
     padding-left: 34px;
-    padding-top: 60px;
+    padding-top: 35px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background: transparent linear-gradient(90deg, rgba(4, 4, 4, 1) 1%, rgba(4, 4, 4, 0.98) 9%, rgba(4, 4, 4, 0) 48%) 0% 0% no-repeat padding-box;
+}
+.profileLogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    transition: .3s;
+}
+
+.profileLogo img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profileLogo a {
+    color: var(--route-color);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+.sidebar:hover .profileLogo {
+    opacity: 1;
 }
 
 .sidebar ul li {
-    margin-top: 35px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -26,6 +56,7 @@
 
 .sidebar:hover {
     width: 312px;
+    background: transparent linear-gradient(90deg, rgba(4, 4, 4, 1) 0%, rgba(4, 4, 4, 0.98) 100%, rgba(4, 4, 4, 0) 100%) 0% 0% no-repeat padding-box
 }
 .sidebar:hover ul li {
     border-radius: 12px;
@@ -36,7 +67,7 @@
 .sidebar ul li {
     width: 82px;
     height: 82px;
-    transition: .3s;
+    transition: .4s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,4 +110,7 @@
 }
 .sidebar ul li.activeRoute{
     background-color: var(--route-background);
+}
+.sidebarWrapper .sidebar:hover .sidebarWrapper .layer {
+    opacity: 1;
 }

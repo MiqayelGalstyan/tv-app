@@ -1,0 +1,77 @@
+:root {
+    --white-color:#FFFFFF;
+    --font-family:sans-serif;
+}
+
+.container {
+    padding-top: 120px;
+    padding-left: 135px;
+    font-family: sans-serif;
+    
+}
+.container * {
+    font-family: var(--font-family);
+}
+
+.category {
+    color: darkgray;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.title {
+    color: #F1F1F1;
+    font-size: 65px;
+    padding-bottom: 15px;
+}
+
+.date_mpa_flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.text {
+    color: var(--white-color);
+    padding-bottom: 15px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.desc {
+    color: var(--white-color);
+    padding-bottom: 15px;
+    font-size: 15px;
+    margin-right: 15px; 
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 15px;
+}
+.buttonsArea {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.buttonsArea button {
+    margin-right: 10px;
+    background: none;
+    border: none;
+    border-radius: 40px;
+    height: 52px;
+    width: 200px;
+    color:var(--white-color);
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttonsArea button:nth-child(2n+1) {
+    background-color: #858688;
+    color: black;
+}
+
+.buttonsArea button:nth-child(2n) {
+    background-color: #09098d;
+    color: var(--white-color);
+}
