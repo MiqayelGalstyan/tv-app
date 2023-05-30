@@ -30,6 +30,22 @@
     margin-right: 15px;
 }
 
+.search {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 42px;
+}
+
+.search a {
+    color: var(--route-color);
+    font-size: var(--font-size);
+    text-decoration: none;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
 .profileLogo a {
     color: var(--route-color);
     font-size: 20px;
@@ -56,7 +72,7 @@
 
 .sidebar:hover {
     width: 312px;
-    background: transparent linear-gradient(90deg, rgba(4, 4, 4, 1) 0%, rgba(4, 4, 4, 0.98) 100%, rgba(4, 4, 4, 0) 100%) 0% 0% no-repeat padding-box
+    background: transparent linear-gradient(90deg, #000000 40%, #00000000 373px, #000000 100%) 0% 0% no-repeat padding-box;
 }
 .sidebar:hover ul li {
     border-radius: 12px;
@@ -113,4 +129,15 @@
 }
 .sidebarWrapper .sidebar:hover .sidebarWrapper .layer {
     opacity: 1;
+}
+
+.bottomIcons {
+    margin-bottom: 10px;
+    color: #858688;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: sans-serif;
+    white-space: nowrap;
+    padding: 0!important;
+    margin-left: 30px;
 }

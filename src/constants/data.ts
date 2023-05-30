@@ -8,6 +8,20 @@ import Specials6 from "../assets/images/https_specials-6.png";
 import Specials7 from "../assets/images/https_specials-7.png";
 import Specials8 from "../assets/images/https_specials-8.png";
 
+export interface IDataItemProps {
+  Id: string;
+  Title: string;
+  CoverImage: string;
+  TitleImage: string;
+  Date: string;
+  ReleaseYear: string;
+  MpaRating: string;
+  Category: string;
+  Duration: string;
+  Description: string;
+  VideoUrl?: string;
+}
+
 export const data = {
   Featured: {
     Id: "1",
@@ -34,7 +48,7 @@ export const data = {
       Duration: "2000",
       VideoUrl:
         "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      Description: "Info About it",
+      Description: "Info About it First",
     },
     {
       Id: "2",

@@ -12,34 +12,41 @@ export const Sidebar = (): JSX.Element => {
   const navigate = useNavigate();
 
   return (
-      <header className={styles.sidebar}>
-        <nav>
-          <ul>
-            <div className={styles.profileLogo}>
-              <img src={ProfileIcon} alt={"ProfileIcon"} />
-              <a> Daniel </a>
-            </div>
-            <li>
-              <img src={SearchIcon} alt={"Search"} />
-              <a>Search</a>
+    <header className={styles.sidebar}>
+      <nav>
+        <ul>
+          <div className={styles.profileLogo}>
+            <img src={ProfileIcon} alt={"ProfileIcon"} />
+            <a> Daniel </a>
+          </div>
+          <li className={styles.search}>
+            <img src={SearchIcon} alt={"Search"} />
+            <a>Search</a>
+          </li>
+          {menuItemsData.map((item) => (
+            <li
+              key={item.id}
+              className={active === item.id ? styles.activeRoute : styles.route}
+              onClick={() => {
+                navigate(item.url);
+                setActive(item.id);
+              }}
+            >
+              <img src={item.icon} alt={`${item.id}`} />
+              <a>{item.label}</a>
             </li>
-            {menuItemsData.map((item) => (
-              <li
-                key={item.id}
-                className={
-                  active === item.id ? styles.activeRoute : styles.route
-                }
-                onClick={() => {
-                  navigate(item.url);
-                  setActive(item.id);
-                }}
-              >
-                <img src={item.icon} alt={`${item.id}`} />
-                <a>{item.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
+          ))}
+          <li className={styles.bottomIcons}>
+            <a>Language</a>
+          </li>
+          <li className={styles.bottomIcons}>
+            <a>Get Help</a>
+          </li>
+          <li className={styles.bottomIcons}>
+            <a>Exit</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
