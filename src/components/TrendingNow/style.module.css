@@ -1,3 +1,10 @@
+.sliderContainer .slick-active{
+    display: block; 
+} 
+.sliderContainer .slick-slide {
+display: none;
+}
+
 .item {
     width: 200px;
 }
@@ -13,6 +20,7 @@
     height: 200px;
     object-fit: cover;
 }
+
 
 .sliderTitle {
     color: white;

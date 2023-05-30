@@ -288,5 +288,19 @@ export const data = {
         "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
       Description: "Info About it",
     },
+    {
+      Id: "19",
+      Title: "Title 19",
+      CoverImage: Specials3,
+      TitleImage: "FeaturedTitleImage.png",
+      Date: "2021-07-21T12:16:50.894556",
+      ReleaseYear: "2021",
+      MpaRating: "18+",
+      Category: "Genres",
+      Duration: "1200",
+      VideoUrl:
+        "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      Description: "Info About it",
+    },
   ],
 };

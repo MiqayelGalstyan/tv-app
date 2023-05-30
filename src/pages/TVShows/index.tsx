@@ -2,8 +2,8 @@ import useFilteredDataHook from "../../hooks/useFilteredDataHook";
 import TrendingNow from "../../components/TrendingNow/TrendingNow";
 import MainFeatured from "../../components/MainFeatured";
 
-const Movies = (): JSX.Element => {
-  const list = useFilteredDataHook("Movie");
+const TVShows = (): JSX.Element => {
+  const list = useFilteredDataHook("TV Show");
 
   return (
     <>
@@ -13,4 +13,4 @@ const Movies = (): JSX.Element => {
   );
 };
 
-export default Movies;
+export default TVShows;
